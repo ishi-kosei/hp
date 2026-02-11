@@ -1,20 +1,49 @@
-# HP Project
+# EXECUTIVE NEXUS - 経営者コミュニティHP
 
-プロジェクトの説明をここに記載してください。
+志高き経営者が集う、次世代のビジネスコミュニティのホームページです。
+
+## 技術スタック
+
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
 
 ## セットアップ
 
-1. Gitをインストール: https://git-scm.com/download/win
-2. GitHub CLIをインストール: https://cli.github.com/
-3. 以下のコマンドを実行:
-
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-gh repo create hp --public --source=. --remote=origin --push
+npm install
+npm run dev
 ```
 
-## 使用方法
+開発サーバーが http://localhost:3000 で起動します。
 
-プロジェクトの使用方法をここに記載してください。
+## ビルド
+
+```bash
+npm run build
+npm start
+```
+
+## 構成
+
+```
+src/
+  app/
+    globals.css    # グローバルスタイル
+    layout.tsx     # ルートレイアウト
+    page.tsx       # トップページ
+  components/
+    Header.tsx             # ヘッダー・ナビゲーション
+    HeroSection.tsx        # ヒーローセクション
+    AnimatedBackground.tsx # パーティクル背景
+    MarqueeSection.tsx     # キーワード流し表示
+    AboutSection.tsx       # コミュニティ紹介
+    NumbersSection.tsx     # 実績数値
+    FeaturesSection.tsx    # 特徴セクション
+    EventsSection.tsx      # イベント情報
+    VoicesSection.tsx      # メンバーの声
+    ContactSection.tsx     # お問い合わせ
+    ScrollReveal.tsx       # スクロールアニメーション
+    Footer.tsx             # フッター
+```
